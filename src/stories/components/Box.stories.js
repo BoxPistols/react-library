@@ -1,35 +1,37 @@
 import React from 'react'
-import Box from './Box'
+import Bg from './Box'
 
 export default {
-	title: 'UI/Box/Colors',
-	component: Box
+	title: 'UI/BackGround/Colors',
+	component: Bg
 }
 
-export const Mix = () => {
+export const ColorsMix = () => {
 	return (
         <div className="stb__box-org">
             <div className="stb__box-1">
-                <Box variant='primary' rad=''></Box>
-                <Box variant='success'></Box>
-                <Box variant='danger'></Box>
-                <Box variant='warning'></Box>
-                <Box variant='info'></Box>
+                <Bg variant='primary' rad=''></Bg>
+                <Bg variant='success'></Bg>
+                <Bg variant='danger'></Bg>
+                <Bg variant='warning'></Bg>
+                <Bg variant='info'></Bg>
             </div>
             <div className="stb__box-1">
-                <Box variant='gray-100'></Box>
-                <Box variant='gray-200'></Box>
-                <Box variant='gray-300'></Box>
-                <Box variant='gray-400'></Box>
-                <Box variant='gray-500'></Box>
+                <Bg variant='gray-100'></Bg>
+                <Bg variant='gray-200'></Bg>
+                <Bg variant='gray-300'></Bg>
+                <Bg variant='gray-400'></Bg>
+                <Bg variant='gray-500'></Bg>
             </div>
         </div>
 	)
 }
 
-// export const Primary = () => <Box variant='primary'>Primary</Box>
-// export const Success = () => <Box variant='success'>Success</Box>
-// export const Danger = () => <Box variant='danger'>Danger</Box>
-// export const Warning = () => <Box variant='warning'>Warning</Box>
-// export const Info = () => <Box variant='info'>Info</Box>
-// export const Gray = () => <Box variant='gray'>Gray</Box>
+export const Primary = () => <Bg variant='primary'></Bg>
+export const Success = () => <Bg variant='success'></Bg>
+export const Danger = () => <Bg variant='danger'></Bg>
+export const Warning = () => <Bg variant='warning'></Bg>
+export const Info = () => <Bg variant='info'></Bg>
+export const Gray = () => <Bg variant='gray'>disable</Bg>
+
+Gray.storyName = 'Gray Default'

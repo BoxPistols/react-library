@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Button } from './Button';
 
 export default {
@@ -29,9 +28,9 @@ Large.args = {
   label: 'Button',
 };
 
-export const Big = Template.bind({});
-Big.args = {
-  size: 'big',
+export const Xlarge = Template.bind({});
+Xlarge.args = {
+  size: 'x-large',
   label: 'Button',
 };
 

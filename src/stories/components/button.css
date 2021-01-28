@@ -1,24 +1,28 @@
-.button {
-	border: none;
-	color: white;
-	padding: 12px 24px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	right: 16px;
-	border-radius: 4px;
-	cursor: pointer;
+.btn {
+    right: 16px;
+    display: inline-block;
+    padding: 12px 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 4em;
+    min-width: 240px;
 }
 
-.primary {
-	background-color: #008cba;
+.btn-primary {
+    background-color: #008cba;
 }
-.success {
-	background-color: rgb(67, 172, 102);
+
+.btn-success {
+    background-color: rgb(67, 172, 102);
 }
-.danger {
-	background-color: #e6371f;
+
+.btn-danger {
+    background-color: #e6371f;
 }
-.warning {
-	background-color: #dbb22c;
+
+.btn-warning {
+    background-color: #dbb22c;
 }

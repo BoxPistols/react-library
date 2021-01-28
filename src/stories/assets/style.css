@@ -1,0 +1,10 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+/* Storybook Style */
+
+.stb__box-1 {
+    display: inline-flex;
+}
+
+.stb__box-1>* {
+    margin: 8px;
+}

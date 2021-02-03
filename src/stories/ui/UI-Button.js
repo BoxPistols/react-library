@@ -1,8 +1,8 @@
 import React from 'react'
 import '../assets/style.css'
-import './button.css'
+import './UI-button.css'
 
-function Button(props) {
+function Btn(props) {
 	const { variant = '', children, ...rest } = props
 	return (
 		<button className={`btn  btn-${variant}`} {...rest}>
@@ -10,4 +10,4 @@ function Button(props) {
 		</button>
 	)
 }
-export default Button
+export default Btn

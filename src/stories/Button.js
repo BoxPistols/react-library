@@ -5,16 +5,18 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, color, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({ primary, color, size, full, label, backgroundColor, ...props }) => {
+  const mode = primary ? 'btn-primary' : 'btn-secondary';
+  const width = full ? 'btn-width-full ' : '';
   return (
       <>
         <button
         type="button"
-        className={['storybook-button', `storybook-button--${size}`, `btn-${color}`, mode].join(' ')}
+        className={['storybook-button', `btn-size-${size}`, `btn-${color}`, mode, width].join(' ')}
+        style={backgroundColor &&{backgroundColor}}
         {...props}
         >
-        {label} {size} {color}
+        {label} {color}
         </button>
     </>
   );
@@ -23,15 +25,17 @@ export const Button = ({ primary, color, size, label, ...props }) => {
 
 Button.propTypes = {
   primary: PropTypes.bool,
-  color: PropTypes.oneOf(['primary', 'success', 'danger']),
+  full: PropTypes.bool,
+  color: PropTypes.oneOf(['secondary','primary', 'success', 'danger']),
   size: PropTypes.oneOf(['small', 'medium', 'large', 'x-large']),
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
-  color: 'primary',
+  color: 'secondary',
   primary: false,
+  full: false,
   size: 'medium',
   onClick: undefined,
 };

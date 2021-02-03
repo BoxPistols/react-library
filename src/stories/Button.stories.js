@@ -14,19 +14,25 @@ const Template = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  primary: false,
+//   primary: false,
   label: 'Default',
 };
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: 'Default',
-};
+// export const Primary = Template.bind({});
+// Primary.args = {
+// //   primary: true,
+//   label: 'Default',
+// };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Second',
+// export const Secondary = Template.bind({});
+// Secondary.args = {
+//   label: 'Second',
+// };
+
+export const Small = Template.bind({});
+Small.args = {
+  size: 'small',
+  label: 'Small',
 };
 
 export const Large = Template.bind({});
@@ -41,11 +47,7 @@ Xlarge.args = {
   label: 'Xlarge',
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Small',
-};
+
 
 export const Full = Template.bind({});
 Full.args = {

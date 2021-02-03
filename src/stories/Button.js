@@ -6,17 +6,17 @@ import './button.css';
  * Primary UI component for user interaction
  */
 export const Button = ({ primary, color, size, full, label, backgroundColor, ...props }) => {
-  const mode = primary ? 'btn-primary' : 'btn-secondary';
+//   const mode = primary ? 'btn-primary' : 'btn-secondary';
   const width = full ? 'btn-width-full ' : '';
   return (
       <>
         <button
         type="button"
-        className={['storybook-button', `btn-size-${size}`, `btn-${color}`, mode, width].join(' ')}
+        className={['storybook-button', `btn-size-${size}`, `btn-${color}`, width].join(' ')}
         style={backgroundColor &&{backgroundColor}}
         {...props}
         >
-        {label} {color}
+        {label} {color}{props.children}
         </button>
     </>
   );
@@ -24,7 +24,7 @@ export const Button = ({ primary, color, size, full, label, backgroundColor, ...
 
 
 Button.propTypes = {
-  primary: PropTypes.bool,
+//   primary: PropTypes.bool,
   full: PropTypes.bool,
   color: PropTypes.oneOf(['secondary','primary', 'success', 'danger']),
   size: PropTypes.oneOf(['small', 'medium', 'large', 'x-large']),
@@ -34,7 +34,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   color: 'secondary',
-  primary: false,
+//   primary: false,
   full: false,
   size: 'medium',
   onClick: undefined,

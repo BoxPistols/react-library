@@ -7,4 +7,16 @@
   &_item {
     display: block;
   }
+
+  @for $i from 0 to 12 {
+    &_cols_#{$i} {
+      flex-basis: $i / 12 * 100%;
+    }
+  }
+
+  @for $i from 0 to 24 {
+    &_cols-24_#{$i} {
+      flex-basis: $i / 24 * 100%;
+    }
+  }
 }

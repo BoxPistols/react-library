@@ -5,17 +5,26 @@ import Grid from 'components/Box/Grid/Grid'
 function App() {
   return (
     <div className="App">
-      <Grid container>
-        <Grid item>
-          <Box>Box 1</Box>
+      <div style={{ margin: '24px' }}>
+        <Grid container>
+          <Grid item cols={8}>
+            <Box>Box 1</Box>
+          </Grid>
+          <Grid item cols={4}>
+            <Box>Box 2</Box>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Box>Box 2</Box>
+      </div>
+      <div style={{ margin: '24px' }}>
+        <Grid container>
+          <Grid item cols_24={3}>
+            <Box>Box 3</Box>
+          </Grid>
+          <Grid item cols_24={21}>
+            <Box>Box 4</Box>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Box>Box 3</Box>
-        </Grid>
-      </Grid>
+      </div>
     </div>
   )
 }

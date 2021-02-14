@@ -4,7 +4,7 @@ import Box from 'components/Box/Box'
 function App() {
   return (
     <div className="App">
-      <Box>Box</Box>
+      <Box>Box 1</Box>
     </div>
   )
 }

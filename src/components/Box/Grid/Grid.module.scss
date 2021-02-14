@@ -1,3 +1,15 @@
+$spacing: (
+  'xxxs': 2px,
+  'xxs': 4px,
+  'xs': 8px,
+  'sm': 12px,
+  'md': 16px,
+  'lg': 24px,
+  'xl': 32px,
+  'xxl': 40px,
+  'xxxl': 48px,
+);
+
 .Grid {
   &_container {
     display: flex;
@@ -17,6 +29,16 @@
   @for $i from 0 to 24 {
     &_cols-24_#{$i} {
       flex-basis: $i / 24 * 100%;
+    }
+  }
+
+  @each $name, $value in $spacing {
+    &_spacing_#{$name} {
+      margin: -$value;
+    }
+
+    &_spacing_#{$name} > &_item {
+      padding: $value;
     }
   }
 }

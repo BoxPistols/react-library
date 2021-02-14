@@ -1,9 +1,13 @@
+$mainClor: darken(turquoise, 12%);
+$shadow_Main: darken(turquoise, 20%);
+
 .Box {
-  font-weight: 700;
+  font-weight: 600;
   padding: 16px;
   text-align: center;
-  color: #ede9f9;
+  color: whitesmoke;
+  font-size: 20px;
   border-radius: 4px;
-  background-color: #47b0b0;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  background-color: $mainClor;
+  box-shadow: 0px 2px 8px rgba($shadow_Main, 0.75);
 }

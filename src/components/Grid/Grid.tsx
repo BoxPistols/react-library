@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './Grid.module.scss'
 import classnames from 'classnames'
-import { Cols, Cols_24, Spacing } from './GridType'
+import { Cols, Cols_24, justifyContent, Spacing } from './GridType'
 
 export const Grid: React.FC<{
   children: React.ReactNode
@@ -22,7 +22,25 @@ export const Grid: React.FC<{
   // not has BreakPoint
   cols_24?: Cols_24
   spacing?: Spacing
-}> = ({ children, container, item, xs, sm, md, lg, xl, xs_24, sm_24, md_24, lg_24, xl_24, cols_24, spacing }) => {
+  justifyContent?: justifyContent
+}> = ({
+  children,
+  container,
+  item,
+  xs,
+  sm,
+  md,
+  lg,
+  xl,
+  xs_24,
+  sm_24,
+  md_24,
+  lg_24,
+  xl_24,
+  cols_24,
+  spacing,
+  justifyContent,
+}) => {
   const propsCss = classnames({
     [css.Grid_container]: container,
     [css.Grid_item]: item,
@@ -40,6 +58,7 @@ export const Grid: React.FC<{
     [css[`Grid_xl_24_${xl_24}`]]: xl_24,
     [css[`Grid_cols-24_${cols_24}`]]: cols_24,
     [css[`Grid_spacing_${spacing}`]]: spacing,
+    [css[`Grid_justifyContent_${justifyContent}`]]: justifyContent,
   })
   return <div className={propsCss}>{children}</div>
 }

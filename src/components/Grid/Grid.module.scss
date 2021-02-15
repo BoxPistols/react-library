@@ -1,6 +1,49 @@
 @import 'css/utility';
 
-/* Grid */
+/*** Grid ***/
+
+/*** display-flex ***/
+$justifyContent: flex-start, center, flex-end, space-between, space-around;
+
+/*** Grid ***/
+/* Mapping BreakPoints for Responsive */
+
+// @mixin breakPoints($name) {
+//   @media screen and (min-width: map-get($breakPoints, $name)) {
+//     @content;
+//   }
+// }
+/*** BreakPoint Vars:
+  $bkp_xs: 480px;
+  $bkp_sm: 768px;
+  $bkp_md: 1280px;
+  $bkp_lg: 1440px;
+  $bkp_xl: 1920px;
+***/
+/*** 12 Column ***/
+
+// Breakoint loop 1 to 12
+@mixin createPoints($propsName, $point) {
+  @media screen and (min-width: $point) {
+    @for $i from 0 to 12 {
+      &_#{$propsName}_#{$i} {
+        flex-basis: $i / 12 * 100%;
+      }
+    }
+  }
+}
+
+/*** 24 Column ***/
+// Breakoint loop 1 to 24
+@mixin createPoints_24($propsName, $point) {
+  @media screen and (min-width: $point) {
+    @for $i from 0 to 24 {
+      &_#{$propsName}_#{$i} {
+        flex-basis: $i / 24 * 100%;
+      }
+    }
+  }
+}
 
 .Grid {
   &_container {
@@ -15,7 +58,7 @@
 
   /* Grid 12-Column  */
   // @for $i from 0 to 12 {
-  //   &_xs_#{$i} {
+  //   &_cols_#{$i} {
   //     flex-basis: $i / 12 * 100%;
   //   }
   // }
@@ -27,31 +70,6 @@
     }
   }
 
-  /* Mapping BreakPoints for Responsive */
-  // @mixin breakPoints($name) {
-  //   @media screen and (min-width: map-get($breakPoints, $name)) {
-  //     @content;
-  //   }
-  // }
-
-  // Breakoint loop 1 to 12
-  @mixin createPoints($propsName, $point) {
-    @media screen and (min-width: $point) {
-      @for $i from 0 to 12 {
-        &_#{$propsName}_#{$i} {
-          flex-basis: $i / 12 * 100%;
-        }
-      }
-    }
-  }
-
-  /** BreakPoint Vars:
-        $bkp_xs: 480px;
-        $bkp_sm: 768px;
-        $bkp_md: 1280px;
-        $bkp_lg: 1440px;
-        $bkp_xl: 1920px;
-    ***/
   /*** 12 Column ***/
   @include createPoints('xs', $bkp_xs);
   @include createPoints('sm', $bkp_sm);
@@ -60,17 +78,6 @@
   @include createPoints('xl', $bkp_xl);
 
   /*** 24 Column ***/
-  // Breakoint loop 1 to 24
-  @mixin createPoints_24($propsName, $point) {
-    @media screen and (min-width: $point) {
-      @for $i from 0 to 24 {
-        &_#{$propsName}_#{$i} {
-          flex-basis: $i / 24 * 100%;
-        }
-      }
-    }
-  }
-
   @include createPoints_24('xs_24', $bkp_xs);
   @include createPoints_24('sm_24', $bkp_sm);
   @include createPoints_24('md_24', $bkp_md);
@@ -94,6 +101,12 @@
 
     &_spacing_#{$name} > &_item {
       padding: $value;
+    }
+  }
+
+  @each $var in $justifyContent {
+    &_justifyContent_#{$var} {
+      justify-content: $var;
     }
   }
 }

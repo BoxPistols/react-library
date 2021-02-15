@@ -1,6 +1,7 @@
 @import 'css/utility';
 
-.GridRuler {
+.GridRuler,
+.GridRuler_24 {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,4 +22,8 @@
       gap: $value * 2;
     }
   }
+}
+
+.GridRuler_24 {
+  grid-template-columns: repeat(24, 1fr);
 }

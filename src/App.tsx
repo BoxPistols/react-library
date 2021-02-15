@@ -1,6 +1,6 @@
 import React from 'react'
 import Box from 'components/Box/Box'
-import Grid from 'components/Box/Grid/Grid'
+import Grid from 'components/Grid/Grid'
 
 function App() {
   return (

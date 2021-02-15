@@ -27,61 +27,64 @@
     }
   }
 
-  /* BreakPoints for Responsive */
-  /*
-    $breakPoints: (
-    'xs': 600px,
-    'sm': 960px,
-    'md': 1280px,
-    'lg': 1440px,
-    'xl': 1920px,
-    );
- */
-  @mixin breakPoints($name) {
-    @media screen and (min-width: map-get($breakPoints, $name)) {
-      @content;
-    }
-  }
+  /* Mapping BreakPoints for Responsive */
+  // @mixin breakPoints($name) {
+  //   @media screen and (min-width: map-get($breakPoints, $name)) {
+  //     @content;
+  //   }
+  // }
 
-  @include breakPoints('xs') {
-    @for $i from 0 to 12 {
-      &_xs_#{$i} {
-        flex-basis: $i / 12 * 100%;
+  // Breakoint loop 1 to 12
+  @mixin createPoints($propsName, $point) {
+    @media screen and (min-width: $point) {
+      @for $i from 0 to 12 {
+        &_#{$propsName}_#{$i} {
+          flex-basis: $i / 12 * 100%;
+        }
       }
     }
   }
 
-  @include breakPoints('sm') {
-    @for $i from 0 to 12 {
-      &_sm_#{$i} {
-        flex-basis: $i / 12 * 100%;
+  /** BreakPoint Vars:
+        $bkp_xs: 480px;
+        $bkp_sm: 768px;
+        $bkp_md: 1280px;
+        $bkp_lg: 1440px;
+        $bkp_xl: 1920px;
+    ***/
+  /*** 12 Column ***/
+  @include createPoints('xs', $bkp_xs);
+  @include createPoints('sm', $bkp_sm);
+  @include createPoints('md', $bkp_md);
+  @include createPoints('lg', $bkp_lg);
+  @include createPoints('xl', $bkp_xl);
+
+  /*** 24 Column ***/
+  // Breakoint loop 1 to 24
+  @mixin createPoints_24($propsName, $point) {
+    @media screen and (min-width: $point) {
+      @for $i from 0 to 24 {
+        &_#{$propsName}_#{$i} {
+          flex-basis: $i / 24 * 100%;
+        }
       }
     }
   }
 
-  @include breakPoints('md') {
-    @for $i from 0 to 12 {
-      &_md_#{$i} {
-        flex-basis: $i / 12 * 100%;
-      }
-    }
-  }
+  @include createPoints_24('xs_24', $bkp_xs);
+  @include createPoints_24('sm_24', $bkp_sm);
+  @include createPoints_24('md_24', $bkp_md);
+  @include createPoints_24('lg_24', $bkp_lg);
+  @include createPoints_24('xl_24', $bkp_xl);
 
-  @include breakPoints('lg') {
-    @for $i from 0 to 12 {
-      &_lg_#{$i} {
-        flex-basis: $i / 12 * 100%;
-      }
-    }
-  }
-
-  @include breakPoints('xl') {
-    @for $i from 0 to 12 {
-      &_xl_#{$i} {
-        flex-basis: $i / 12 * 100%;
-      }
-    }
-  }
+  // if use Map 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+  // @include breakPoints('xs') {
+  //   @for $i from 0 to 12 {
+  //     &_xs_#{$i} {
+  //       flex-basis: $i / 12 * 100%;
+  //     }
+  //   }
+  // }
 
   /* Spacing */
   @each $name, $value in $spacing {

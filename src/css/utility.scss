@@ -21,14 +21,22 @@ $spacing: (
   'xxxl': 48px,
 );
 
-/* BreakPoints */
+/*** --- BreakPoints for Responsive --- ***/
 
+/* BreakPoints for Var */
+$bkp_xs: 480px;
+$bkp_sm: 768px;
+$bkp_md: 1280px;
+$bkp_lg: 1440px;
+$bkp_xl: 1920px;
+
+/* BreakPoints for Map */
 $breakPoints: (
-  'xs': 480px,
-  'sm': 768px,
-  'md': 1280px,
-  'lg': 1440px,
-  'xl': 1920px,
+  'xs': $bkp_xs,
+  'sm': $bkp_sm,
+  'md': $bkp_md,
+  'lg': $bkp_lg,
+  'xl': $bkp_xl,
 );
 
 /* position */

@@ -4,7 +4,7 @@ export type Cols_24 = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14
 
 export type Spacing = 'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl'
 
-/*
+/* @params: Size Name
   'xxxs'
   'xxs'
   'xs'

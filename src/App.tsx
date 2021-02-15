@@ -7,39 +7,68 @@ function App() {
   return (
     <div className="App pos_rel" style={{ margin: '32px' }}>
       <h1 className="head_1">UI Components</h1>
-      {/* <GridRuler spacing={'md'}></GridRuler> */}
+      <GridRuler spacing={'md'}></GridRuler>
       <Grid container spacing="md">
-        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={12} sm={4} md={3} lg={2}>
           <Box>Box 1</Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={12} sm={4} md={3} lg={2}>
           <Box>Box 2</Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={12} sm={4} md={3} lg={2}>
           <Box>Box 3</Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+        <Grid item xs={12} sm={4} md={3} lg={2}>
           <Box>Box 4</Box>
         </Grid>
-      </Grid>
-
-      {/* <div className="pos_rel" style={{ marginTop: '0px' }}>
-        <GridRuler spacing={'xl'}></GridRuler>
-        <Grid container spacing="xl">
-          <Grid item cols_24={6}>
-            null
-          </Grid>
-          <Grid item cols_24={12}>
-            <Box>Box 3</Box>
-          </Grid>
-          <Grid item cols_24={6}>
-            <Box>Box 4</Box>
-          </Grid>
-          <Grid item cols_24={10}>
-            <Box>Box 4</Box>
-          </Grid>
+        <Grid item xs={12} sm={4} md={3} lg={2}>
+          <Box>Box 5</Box>
         </Grid>
-      </div> */}
+        <Grid item xs={12} sm={4} md={3} lg={2}>
+          <Box>Box 6</Box>
+        </Grid>
+      </Grid>
+      {/* 24 colmun */}
+      <h1 className="head_1">24 Column UI Components</h1>
+      {/* <GridRuler spacing={'md'}></GridRuler> */}
+      <Grid container spacing="md">
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 1</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 2</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 3</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 4</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 5</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 6</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 7</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 8</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 9</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 10</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 11</Box>
+        </Grid>
+        <Grid item xs_24={24} sm_24={12} md_24={6} lg_24={3} xl_24={2}>
+          <Box>Box 12</Box>
+        </Grid>
+      </Grid>
     </div>
   )
 }

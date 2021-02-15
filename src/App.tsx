@@ -6,18 +6,20 @@ import { GridRuler } from 'components/GridRuler/GridRuler'
 function App() {
   return (
     <div className="App pos_rel" style={{ margin: '32px' }}>
-
       <h1 className="head_1">UI Components</h1>
-      <GridRuler spacing={'md'}></GridRuler>
+      {/* <GridRuler spacing={'md'}></GridRuler> */}
       <Grid container spacing="md">
-        <Grid item cols={6}>
+        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
           <Box>Box 1</Box>
         </Grid>
-        <Grid item cols={4}>
-          <Box>Box 1</Box>
-        </Grid>
-        <Grid item cols={2}>
+        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
           <Box>Box 2</Box>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+          <Box>Box 3</Box>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+          <Box>Box 4</Box>
         </Grid>
       </Grid>
 

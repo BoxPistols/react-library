@@ -21,11 +21,23 @@ $spacing: (
   'xxxl': 48px,
 );
 
+/* BreakPoints */
+
+$breakPoints: (
+  'xs': 480px,
+  'sm': 768px,
+  'md': 1280px,
+  'lg': 1440px,
+  'xl': 1920px,
+);
+
 /* position */
+
 .pos {
   &_rel {
     position: relative;
   }
+
   &_abs {
     position: absolute;
   }

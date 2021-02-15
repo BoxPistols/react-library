@@ -1,5 +1,7 @@
 @import 'css/utility';
 
+/* Grid */
+
 .Grid {
   &_container {
     display: flex;
@@ -8,20 +10,80 @@
 
   &_item {
     display: block;
+    width: 100%;
   }
 
-  @for $i from 0 to 12 {
-    &_cols_#{$i} {
-      flex-basis: $i / 12 * 100%;
-    }
-  }
+  /* Grid 12-Column  */
+  // @for $i from 0 to 12 {
+  //   &_xs_#{$i} {
+  //     flex-basis: $i / 12 * 100%;
+  //   }
+  // }
 
+  /* Grid 24-Column  */
   @for $i from 0 to 24 {
     &_cols-24_#{$i} {
       flex-basis: $i / 24 * 100%;
     }
   }
 
+  /* BreakPoints for Responsive */
+  /*
+    $breakPoints: (
+    'xs': 600px,
+    'sm': 960px,
+    'md': 1280px,
+    'lg': 1440px,
+    'xl': 1920px,
+    );
+ */
+  @mixin breakPoints($name) {
+    @media screen and (min-width: map-get($breakPoints, $name)) {
+      @content;
+    }
+  }
+
+  @include breakPoints('xs') {
+    @for $i from 0 to 12 {
+      &_xs_#{$i} {
+        flex-basis: $i / 12 * 100%;
+      }
+    }
+  }
+
+  @include breakPoints('sm') {
+    @for $i from 0 to 12 {
+      &_sm_#{$i} {
+        flex-basis: $i / 12 * 100%;
+      }
+    }
+  }
+
+  @include breakPoints('md') {
+    @for $i from 0 to 12 {
+      &_md_#{$i} {
+        flex-basis: $i / 12 * 100%;
+      }
+    }
+  }
+
+  @include breakPoints('lg') {
+    @for $i from 0 to 12 {
+      &_lg_#{$i} {
+        flex-basis: $i / 12 * 100%;
+      }
+    }
+  }
+
+  @include breakPoints('xl') {
+    @for $i from 0 to 12 {
+      &_xl_#{$i} {
+        flex-basis: $i / 12 * 100%;
+      }
+    }
+  }
+
+  /* Spacing */
   @each $name, $value in $spacing {
     &_spacing_#{$name} {
       margin: -$value;

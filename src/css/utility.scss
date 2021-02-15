@@ -1,0 +1,5 @@
+$mainColor: darken(tomato, 10%);
+$primaryColor: desaturate($mainColor, 20%);
+$secondaryColor: adjust-hue($primaryColor, 90deg) - lighten($primaryColor, 8%);
+$shadow_Main: darken($mainColor, 8%);
+$complementColor: complement($primaryColor);

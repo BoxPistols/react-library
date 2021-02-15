@@ -1,11 +1,9 @@
-import React, { FunctionComponent, ReactNode } from 'react'
+import React from 'react'
 import css from './Box.module.scss'
 
-const Box: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
+export const Box: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return <div className={css.Box}>{children}</div>
 }
-
-export default Box
 
 /* if Name function */
 /*

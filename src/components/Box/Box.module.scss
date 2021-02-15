@@ -1,5 +1,4 @@
-$mainClor: darken(turquoise, 12%);
-$shadow_Main: darken(turquoise, 20%);
+@import "css/utility";
 
 .Box {
   font-weight: 600;
@@ -8,6 +7,6 @@ $shadow_Main: darken(turquoise, 20%);
   color: whitesmoke;
   font-size: 20px;
   border-radius: 4px;
-  background-color: $mainClor;
+  background-color: $primaryColor;
   box-shadow: 0px 2px 8px rgba($shadow_Main, 0.75);
 }

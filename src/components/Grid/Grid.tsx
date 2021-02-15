@@ -1,10 +1,10 @@
-import React, { FunctionComponent, ReactNode } from 'react'
+import React from 'react'
 import css from './Grid.module.scss'
 import classnames from 'classnames'
 import { Cols, Cols_24, Spacing } from './GridType'
 
-const Grid: FunctionComponent<{
-  children: ReactNode
+export const Grid: React.FC<{
+  children: React.ReactNode
   container?: boolean
   item?: boolean
   cols?: Cols
@@ -20,5 +20,3 @@ const Grid: FunctionComponent<{
   })
   return <div className={propsCss}>{children}</div>
 }
-
-export default Grid

@@ -1,32 +1,43 @@
 import React from 'react'
 import { Box } from 'components/Box/Box'
 import { Grid } from 'components/Grid/Grid'
+import { GridRuler } from 'components/GridRuler/GridRuler'
 
 function App() {
   return (
-    <div className="App" style={{ padding: '24px' }}>
+    <div className="App pos_rel" style={{ margin: '32px' }}>
+
       <h1 className="head_1">UI Components</h1>
-      <Grid container spacing="xs">
-        <Grid item cols={8}>
+      <GridRuler spacing={'md'}></GridRuler>
+      <Grid container spacing="md">
+        <Grid item cols={6}>
           <Box>Box 1</Box>
         </Grid>
         <Grid item cols={4}>
+          <Box>Box 1</Box>
+        </Grid>
+        <Grid item cols={2}>
           <Box>Box 2</Box>
         </Grid>
       </Grid>
-      <div style={{ marginTop: '12px' }}>
-        <Grid container spacing="sm">
-          <Grid item cols_24={4}>
-            <Box>Box 3</Box>
+
+      {/* <div className="pos_rel" style={{ marginTop: '0px' }}>
+        <GridRuler spacing={'xl'}></GridRuler>
+        <Grid container spacing="xl">
+          <Grid item cols_24={6}>
+            null
           </Grid>
-          <Grid item cols_24={14}>
-            <Box>Box 4</Box>
+          <Grid item cols_24={12}>
+            <Box>Box 3</Box>
           </Grid>
           <Grid item cols_24={6}>
             <Box>Box 4</Box>
           </Grid>
+          <Grid item cols_24={10}>
+            <Box>Box 4</Box>
+          </Grid>
         </Grid>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -1,5 +1,32 @@
+/* Variant */
+
 $mainColor: darken(tomato, 10%);
 $primaryColor: desaturate($mainColor, 20%);
 $secondaryColor: adjust-hue($primaryColor, 90deg) - lighten($primaryColor, 8%);
 $shadow_Main: darken($mainColor, 8%);
 $complementColor: complement($primaryColor);
+
+/* Spacing */
+
+$spacing: (
+  'none': 0px,
+  'xxxs': 2px,
+  'xxs': 4px,
+  'xs': 8px,
+  'sm': 12px,
+  'md': 16px,
+  'lg': 24px,
+  'xl': 32px,
+  'xxl': 40px,
+  'xxxl': 48px,
+);
+
+/* position */
+.pos {
+  &_rel {
+    position: relative;
+  }
+  &_abs {
+    position: absolute;
+  }
+}

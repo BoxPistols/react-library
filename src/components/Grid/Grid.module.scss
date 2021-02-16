@@ -102,6 +102,7 @@ $alignItems: flex-start, center, flex-end, stretch;
 
     &_spacing_#{$name} > &_item {
       padding: $value;
+      background-color: lighten(gray, 40%);
     }
   }
 

@@ -1,0 +1,11 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+  'main': #ef5350,
+  'primary': teal,
+  'danger': pink,
+);
+
+/* import bootstrap to set changes */
+@import '~bootstrap/scss/bootstrap';

@@ -1,18 +1,18 @@
 import React from 'react'
 import { Box } from 'components/Box/Box'
 import { Grid } from 'components/Grid/Grid'
-import { GridRuler, GridRuler_24 } from 'components/GridRuler/GridRuler'
+import { GridRuler } from 'components/GridRuler/GridRuler'
 
 function App() {
   return (
-    <div className="App pos_rel" style={{ margin: '32px', minHeight: '100vh' }}>
+    <div className="App pos_rel" style={{ margin: '32px', minHeight: '20vh' }}>
       <h1 className="head_1">UI Components</h1>
 
       <GridRuler spacing={'xs'}></GridRuler>
       {/* <GridRuler_24 spacing={'xs'}></GridRuler_24> */}
-      <Grid container spacing="xs" justifyContent="center" alignItems="center" style={{ height: '100vh' }}>
+      <Grid container spacing="xs" justifyContent="center" alignItems="center" style={{ height: '20vh' }}>
         <Grid item xs={4} sm={2} md={2} lg={2}>
-          <Box style={{ height: '200px' }}>Box 1</Box>
+          <Box style={{ color: 'skyblue' }}>Box 1</Box>
         </Grid>
         <Grid item xs={4} sm={2} md={2} lg={2}>
           <Box>Box 2</Box>

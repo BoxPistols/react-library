@@ -1,8 +1,10 @@
+// @import '../index';
+
 /* Variant */
 
 $mainColor: darken(tomato, 10%);
-$primaryColor: desaturate($mainColor, 20%);
-$secondaryColor: adjust-hue($primaryColor, 90deg) - lighten($primaryColor, 8%);
+$primaryColor: desaturate($mainColor, 50%);
+$secondaryColor: adjust-hue($primaryColor, 90deg) - lighten($primaryColor, 2%);
 $shadow_Main: darken($mainColor, 8%);
 $complementColor: complement($primaryColor);
 
@@ -39,6 +41,8 @@ $breakPoints: (
   'xl': $bkp_xl,
 );
 
+
+
 /* position */
 
 .pos {
@@ -49,4 +53,13 @@ $breakPoints: (
   &_abs {
     position: absolute;
   }
+}
+
+/* Heading 一括 */
+
+[class^='head_'] {
+  line-height: 1.8;
+
+  // color: $complementColor;
+  color: $secondaryColor;
 }

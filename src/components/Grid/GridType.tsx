@@ -43,3 +43,4 @@ export type Spacing = 'none' | 'xxxs' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
  */
 
 export type justifyContent = 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around'
+export type alignItems = 'flex-start' | 'center' | 'flex-end' | 'stretch'

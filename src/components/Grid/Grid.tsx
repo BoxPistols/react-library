@@ -1,29 +1,32 @@
 import React from 'react'
 import css from './Grid.module.scss'
 import classnames from 'classnames'
-import { Cols, Cols_24, justifyContent, Spacing } from './GridType'
+import { Cols, Cols_24, Spacing, justifyContent, alignItems } from './GridType'
 
-export const Grid: React.FC<{
-  children: React.ReactNode
-  container?: boolean
-  item?: boolean
-  // 12 Column
-  xs?: Cols
-  sm?: Cols
-  md?: Cols
-  lg?: Cols
-  xl?: Cols
-  // 24 Column
-  xs_24?: Cols_24
-  sm_24?: Cols_24
-  md_24?: Cols_24
-  lg_24?: Cols_24
-  xl_24?: Cols_24
-  // not has BreakPoint
-  cols_24?: Cols_24
-  spacing?: Spacing
-  justifyContent?: justifyContent
-}> = ({
+export const Grid: React.FC<
+  {
+    children: React.ReactNode
+    container?: boolean
+    item?: boolean
+    // 12 Column
+    xs?: Cols
+    sm?: Cols
+    md?: Cols
+    lg?: Cols
+    xl?: Cols
+    // 24 Column
+    xs_24?: Cols_24
+    sm_24?: Cols_24
+    md_24?: Cols_24
+    lg_24?: Cols_24
+    xl_24?: Cols_24
+    // not has BreakPoint
+    cols_24?: Cols_24
+    spacing?: Spacing
+    justifyContent?: justifyContent
+    alignItems?: alignItems
+  } & React.HTMLAttributes<HTMLDivElement>
+> = ({
   children,
   container,
   item,
@@ -40,6 +43,8 @@ export const Grid: React.FC<{
   cols_24,
   spacing,
   justifyContent,
+  alignItems,
+  ...props
 }) => {
   const propsCss = classnames({
     [css.Grid_container]: container,
@@ -59,6 +64,11 @@ export const Grid: React.FC<{
     [css[`Grid_cols-24_${cols_24}`]]: cols_24,
     [css[`Grid_spacing_${spacing}`]]: spacing,
     [css[`Grid_justifyContent_${justifyContent}`]]: justifyContent,
+    [css[`Grid_alignItems_${alignItems}`]]: alignItems,
   })
-  return <div className={propsCss}>{children}</div>
+  return (
+    <div className={propsCss} {...props}>
+      {children}
+    </div>
+  )
 }

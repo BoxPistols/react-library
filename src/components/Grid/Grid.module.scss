@@ -4,6 +4,7 @@
 
 /*** display-flex ***/
 $justifyContent: flex-start, center, flex-end, space-between, space-around;
+$alignItems: flex-start, center, flex-end, stretch;
 
 /*** Grid ***/
 /* Mapping BreakPoints for Responsive */
@@ -107,6 +108,12 @@ $justifyContent: flex-start, center, flex-end, space-between, space-around;
   @each $var in $justifyContent {
     &_justifyContent_#{$var} {
       justify-content: $var;
+    }
+  }
+
+  @each $var in $alignItems {
+    &_alignItems_#{$var} {
+      align-items: $var;
     }
   }
 }

@@ -161,3 +161,83 @@ export const Grid_24: Story = (args) => (
     </Grid>
   </div>
 )
+// eith Grid
+export const Grid_24_Ruler: Story = (args) => (
+  <div style={{ position: 'relative', height: '100vh' }}>
+    <GridRuler_24 spacing={'xxs'}></GridRuler_24>
+    <Grid container spacing="xxs" {...args} >
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>1</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>2</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>3</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>4</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>5</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>6</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>7</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>8</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>9</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>10</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>11</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>12</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>13</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>14</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>15</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>16</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>17</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>18</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>19</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>20</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>21</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>22</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>23</Box>
+      </Grid>
+      <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
+        <Box>24</Box>
+      </Grid>
+    </Grid>
+  </div>
+)

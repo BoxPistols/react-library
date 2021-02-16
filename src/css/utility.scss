@@ -2,10 +2,10 @@
 
 /* Variant */
 
-$mainColor: darken(tomato, 10%);
-$primaryColor: desaturate($mainColor, 50%);
+$mainColor: #ef5350;
+$primaryColor: desaturate($mainColor, 10%);
 $secondaryColor: adjust-hue($primaryColor, 90deg) - lighten($primaryColor, 2%);
-$shadow_Main: darken($mainColor, 8%);
+$shadow_Main: darken($mainColor, 25%);
 $complementColor: complement($primaryColor);
 
 /* Spacing */

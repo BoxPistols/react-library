@@ -50,3 +50,11 @@ code {
   // color: $complementColor;
   color: $secondaryColor;
 }
+
+.fx {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fx_jc-e {
+  justify-content: flex-end;
+}

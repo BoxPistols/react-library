@@ -29,5 +29,5 @@ yarn-error.log*
 
 
 # Build
-storybook-static/
+# storybook-static
 docs/

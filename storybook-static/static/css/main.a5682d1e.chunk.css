@@ -1,0 +1,281 @@
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css);
+.storybook-button {
+	font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	border: 0;
+	border-radius: 3em;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1;
+}
+
+/* Color */
+.btn-primary {
+	color: white;
+	background-color: #1ea7fd;
+}
+.btn-success {
+	color: white;
+	background-color: #40a340;
+}
+.btn-danger {
+	color: white;
+	background-color: tomato;
+}
+
+/* Bool */
+.btn-secondary {
+	color: #333;
+	background-color: transparent;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+
+/* Size */
+.btn-size-small {
+	font-size: 12px;
+	padding: 10px 16px;
+}
+.btn-size-medium {
+	font-size: 14px;
+	padding: 11px 20px;
+}
+.btn-size-large {
+	font-size: 16px;
+	padding: 12px 24px;
+}
+.btn-size-x-large {
+	font-size: 20px;
+	padding: 16px 28px;
+}
+.btn-width-full {
+    width: 100%;
+    max-width: 480px;
+}
+
+.wrapper {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1;
+  margin: 6px 0 6px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+section {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 48px 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  color: #333;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0 0 4px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1ea7fd;
+}
+
+ul {
+  padding-left: 30px;
+  margin: 1em 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.tip {
+  display: inline-block;
+  border-radius: 1em;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 700;
+  background: #e7fdd8;
+  color: #66bf3c;
+  padding: 4px 12px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.tip-wrapper {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.tip-wrapper svg {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 4px;
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+.tip-wrapper svg path {
+  fill: #1ea7fd;
+}
+
+/* Storybook Style */
+
+.stb__box-1 {
+    display: inline-flex;
+}
+
+.stb__box-1>* {
+    margin: 8px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+    width: 120px;
+    height: 120px;
+}
+
+.box p{
+    margin: 0;
+}
+
+.variant-code{
+    -webkit-user-select: all;  /* Chrome all / Safari all */     /* Firefox all */
+    -ms-user-select: all;      /* IE 10+ */
+    user-select: all;          /* Likely future */
+}
+
+/* Colors */
+.box-primary {
+    background-color: #2161aa;
+}
+
+.box-success {
+    background-color: rgb(53, 146, 84);
+}
+
+.box-danger {
+    background-color: hsl(7, 61%, 48%);
+}
+
+.box-warning {
+    background-color: hsl(46, 71%, 54%);
+}
+
+.box-info {
+    background-color: hsl(192, 53%, 46%);
+}
+
+.box-gray {
+    background-color: #ccc
+}
+
+.box-gray-100 {
+    background-color: rgb(228, 228, 228)
+}
+
+.box-gray-200 {
+    background-color: rgb(190, 190, 190)
+}
+
+.box-gray-300 {
+    background-color: rgb(133, 133, 133)
+}
+
+.box-gray-400 {
+    background-color: rgb(105, 105, 105)
+}
+
+.box-gray-500 {
+    background-color: rgb(65, 65, 65)
+}
+
+/* Radius */
+.rad-none {
+    border-radius: 0px;
+}
+
+.rad-sm {
+    border-radius: 4px;
+}
+
+.rad-md {
+    border-radius: 8px;
+}
+
+.rad-lg {
+    border-radius: 12px;
+}
+
+.rad-half {
+    border-radius: 50%;
+}
+
+.rad-full {
+    border-radius: 4em;
+}
+.btn {
+    right: 16px;
+    display: inline-block;
+    padding: 12px 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 4em;
+    min-width: 240px;
+}
+
+.btn-primary {
+    background-color: #008cba;
+}
+
+.btn-success {
+    background-color: rgb(67, 172, 102);
+}
+
+.btn-danger {
+    background-color: #e6371f;
+}
+
+.btn-warning {
+    background-color: #dbb22c;
+}
+
+/*# sourceMappingURL=main.a5682d1e.chunk.css.map*/

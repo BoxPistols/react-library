@@ -1,32 +1,28 @@
 import React from 'react';
 import { Button } from './Button';
 
-export default {
+const Storybook = {
   title: 'State/Button',
   component: Button,
   argTypes: {
-    backgroundColor:  { control: 'color' },
+    backgroundColor: { control: 'color' },
 
   },
 };
+export default Storybook
 
 const Template = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-//   primary: false,
+  //   primary: false,
   label: 'Default',
 };
 
 // export const Primary = Template.bind({});
 // Primary.args = {
-// //   primary: true,
-//   label: 'Default',
-// };
-
-// export const Secondary = Template.bind({});
-// Secondary.args = {
-//   label: 'Second',
+//   primary: true,
+//   label: 'primary',
 // };
 
 export const Small = Template.bind({});

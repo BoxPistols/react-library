@@ -1,10 +1,11 @@
 import React from 'react';
 import  Button  from './Button';
 
-export default {
+const Storybook = {
   title: 'UI/Button/Colors',
   component: Button,
 };
+export default Storybook
 
 export const Primary = () => <Button variant='primary'>Primary</Button>
 export const Success = () => <Button variant='success'>Success</Button>

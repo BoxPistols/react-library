@@ -10,7 +10,7 @@ export const Box: React.FC<
     // 12 Column
   } & React.HTMLAttributes<HTMLDivElement>
 > = ({ children, container, item, ...props }) => {
-  const propsCss = classnames({
+  classnames({
     [css.Grid_container]: container,
     [css.Grid_item]: item,
   })

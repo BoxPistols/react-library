@@ -2,11 +2,11 @@ import React from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
 import { Box } from '../Box/Box'
 import { Grid } from '../Grid/Grid'
-import { GridRuler, GridRuler_24 } from '../GridRuler/GridRuler'
+import { GridRuler, GRIDRULER_24 } from '../GridRuler/GridRuler'
 import '../../css/utility.scss'
 
 export default {
-  title: 'Grid',
+  title: 'Layout/Grid',
   component: Grid,
 } as Meta
 
@@ -84,7 +84,7 @@ export const Interactive: Story = (args) => (
 )
 export const Grid_24: Story = (args) => (
   <div style={{ position: 'relative', height: '100vh' }}>
-    {/* <GridRuler_24 spacing={'xxs'}></GridRuler_24> */}
+    {/* <GRIDRULER_24 spacing={'xxs'}></GRIDRULER_24> */}
     <Grid container spacing="xxs" {...args} >
       <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
         <Box>1</Box>
@@ -164,7 +164,7 @@ export const Grid_24: Story = (args) => (
 // eith Grid
 export const Grid_24_Ruler: Story = (args) => (
   <div style={{ position: 'relative', height: '100vh' }}>
-    <GridRuler_24 spacing={'xxs'}></GridRuler_24>
+    <GRIDRULER_24 spacing={'xxs'}></GRIDRULER_24>
     <Grid container spacing="xxs" {...args} >
       <Grid item xs_24={24} sm_24={4} md_24={2} lg_24={1}>
         <Box>1</Box>

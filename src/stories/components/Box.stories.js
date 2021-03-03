@@ -1,10 +1,11 @@
 import React from 'react'
 import Bg from './Box'
 
-export default {
+const Storybook = {
 	title: 'UI/BackGround/Colors',
 	component: Bg
 }
+export default Storybook
 
 export const ColorsMix = () => {
 	return (

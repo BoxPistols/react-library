@@ -16,8 +16,8 @@ export const GridRuler: React.FC<{ spacing: Spacing }> = ({ spacing }) => {
   )
 }
 
-export const GridRuler_24: React.FC<{ spacing: Spacing }> = ({ spacing }) => {
-  const propsCss = classnames(css.GridRuler_24, {
+export const GRIDRULER_24: React.FC<{ spacing: Spacing }> = ({ spacing }) => {
+  const propsCss = classnames(css.GRIDRULER_24, {
     [css[`GridRuler_spacing_${spacing}`]]: spacing,
   })
   return (

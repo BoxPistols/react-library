@@ -5,7 +5,7 @@ import { Grid } from '../Grid/Grid'
 import '../../css/utility.scss'
 
 export default {
-  title: 'Box',
+  title: 'Layout/Box',
   component: Box,
   children: ''
 } as Meta

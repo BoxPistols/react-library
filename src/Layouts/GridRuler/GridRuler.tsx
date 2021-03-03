@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './GridRuler.module.scss'
 import classnames from 'classnames'
-import { Spacing } from 'components/Grid/GridType'
+import { Spacing } from 'Layouts/Grid/GridType'
 
 export const GridRuler: React.FC<{ spacing: Spacing }> = ({ spacing }) => {
   const propsCss = classnames(css.GridRuler, {

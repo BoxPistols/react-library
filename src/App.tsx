@@ -2,9 +2,8 @@ import React from 'react'
 // import { Box } from 'components/Box/Box'
 // import { Grid } from 'components/Grid/Grid'
 // import { GridRuler } from 'components/GridRuler/GridRuler'
-import { GridMock } from 'components/Grid/GridMock'
-
 // import { Button } from 'react-bootstrap'
+import { GridMock } from 'Layouts/Grid/GridMock'
 {
   /* <Button variant='primary' onClick={() => alert('hello')}>ボタン</Button> */
 }

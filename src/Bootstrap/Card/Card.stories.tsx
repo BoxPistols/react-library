@@ -1,6 +1,6 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
-import { Grid } from '../../components/Grid/Grid'
+import { Grid } from '../../Layouts/Grid/Grid'
 import { Button, Card } from 'react-bootstrap'
 import './Card.scss'
 

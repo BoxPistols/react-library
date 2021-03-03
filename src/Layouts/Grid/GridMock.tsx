@@ -1,12 +1,12 @@
 import React from 'react'
-import { Box } from 'components/Box/Box'
-import { Grid } from 'components/Grid/Grid'
-import { GridRuler } from 'components/GridRuler/GridRuler'
+import { Box } from 'Layouts/Box/Box'
+import { Grid } from 'Layouts/Grid/Grid'
+import { GridRuler } from 'Layouts/GridRuler/GridRuler'
 
 export function GridMock() {
   return (
     <div>
-      <h1 className="head_1">UI Components</h1>
+      <h1 className="head_1">UI Layouts</h1>
 
       <GridRuler spacing={'xs'}></GridRuler>
       {/* <GRIDRULER_24 spacing={'xs'}></GRIDRULER_24> */}
@@ -32,7 +32,7 @@ export function GridMock() {
       </Grid>
 
       {/* 24 colmun */}
-      <h1 className="head_1">24 Column UI Components</h1>
+      <h1 className="head_1">24 Column UI Layouts</h1>
       {/* <GridRuler spacing={'md'}></GridRuler> */}
       {/* <GRIDRULER_24 spacing={'xs'}></GRIDRULER_24> */}
       <Grid container spacing="xs">

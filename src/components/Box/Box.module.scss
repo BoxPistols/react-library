@@ -1,0 +1,12 @@
+@import "../../css/utility";
+
+.Box {
+  font-weight: 600;
+  padding: 16px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: $primaryColor;
+  box-shadow: 0px 2px 8px rgba($shadow_Main, 0.75);
+}

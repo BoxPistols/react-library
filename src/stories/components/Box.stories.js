@@ -2,7 +2,7 @@ import React from 'react'
 import Bg from './Box'
 
 const Storybook = {
-	title: 'UI/BackGround/Colors',
+	title: 'UI-Catalogue/BackGround/Colors',
 	component: Bg
 }
 export default Storybook

@@ -1,5 +1,5 @@
-import React from 'react'
-import '../assets/style.css'
+// import React from 'react'
+import '../../../assets/style.css'
 import './box.css'
 
 function Box(props) {

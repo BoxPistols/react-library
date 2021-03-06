@@ -1,7 +1,5 @@
 import React from 'react'
-// import '../assets/style.css'
-import './button.css'
-// import Button from './Button'
+import './button.scss'
 
 function Button(props) {
 	const { variant = '', children, ...rest } = props

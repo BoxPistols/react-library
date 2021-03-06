@@ -1,3 +1,11 @@
+.stb__box-1 {
+  display: inline-flex;
+}
+
+.stb__box-1>* {
+  margin: 8px;
+}
+
 .box {
   display: flex;
   flex-direction: column;

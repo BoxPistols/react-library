@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from './Button';
 
 const Storybook = {
@@ -6,7 +5,6 @@ const Storybook = {
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
-
   },
 };
 export default Storybook

@@ -2,7 +2,7 @@ import React from 'react';
 import  Button  from './Button';
 
 const Storybook = {
-  title: 'Example/Button',
+  title: 'UI-Catalogue/Button',
   component: Button,
 };
 export default Storybook

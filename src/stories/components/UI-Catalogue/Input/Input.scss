@@ -1,0 +1,26 @@
+.form-input {
+  > label {
+    margin-right: 0.5em;
+  }
+
+  > input {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 0.4em 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    background-color: #fcfcfc;
+  }
+
+  .small {
+    min-width: 120px;
+  }
+
+  .medium {
+    min-width: 240px;
+  }
+
+  .large {
+    min-width: 320px;
+  }
+}

@@ -1,15 +1,13 @@
 // @import '../index';
 
 /* Variant */
+$primaryColor: #1c8bc7;
+$secondaryColor: adjust-hue($primaryColor, 90deg);;
 
-$mainColor: #ef5350;
-$primaryColor: desaturate($mainColor, 10%);
-$secondaryColor: adjust-hue($primaryColor, 90deg) - lighten($primaryColor, 2%);
-$shadow_Main: darken($mainColor, 25%);
+$shadow_Main: darken($primaryColor, 15%);
 $complementColor: complement($primaryColor);
 
 /* Spacing */
-
 $spacing: (
   'none': 0px,
   'xxxs': 2px,
@@ -22,6 +20,17 @@ $spacing: (
   'xxl': 40px,
   'xxxl': 48px,
 );
+
+/* Spacing */
+@each $name, $value in $spacing {
+  .gutter_pd-#{$name} {
+    padding: $value;
+  }
+  .gutter_mg-#{$name} {
+    margin: $value;
+  }
+}
+
 
 /*** --- BreakPoints for Responsive --- ***/
 

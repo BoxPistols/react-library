@@ -2,113 +2,53 @@ import React from 'react'
 import { Box } from 'Layouts/Box/Box'
 import { Grid } from 'Layouts/Grid/Grid'
 import { GridRuler } from 'Layouts/GridRuler/GridRuler'
+import '../../css/utility.scss'
 
 export function GridMock() {
   return (
-    <div>
+    // justifyContent="center" alignItems="center"
+    <Grid container spacing="xs">
       <h1 className="head_1">UI Layouts</h1>
-
-      <GridRuler spacing={'xs'}></GridRuler>
-      {/* <GRIDRULER_24 spacing={'xs'}></GRIDRULER_24> */}
-      <Grid container spacing="xs" justifyContent="center" alignItems="center" style={{ height: 'auto' }}>
-        <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Box style={{ color: 'skyblue' }}>Box 1</Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Box>Box 2</Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Box>Box 3</Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Box>Box 4</Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Box>Box 5</Box>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Box>Box 6</Box>
-        </Grid>
-      </Grid>
-
-      {/* 24 colmun */}
-      <h1 className="head_1">24 Column UI Layouts</h1>
-      {/* <GridRuler spacing={'md'}></GridRuler> */}
-      {/* <GRIDRULER_24 spacing={'xs'}></GRIDRULER_24> */}
-      <Grid container spacing="xs">
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>1</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>2</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>3</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>4</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>5</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>6</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>7</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>8</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>9</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>10</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>11</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>12</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>13</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>14</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>15</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>16</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>17</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>18</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>19</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>20</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>21</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>22</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>23</Box>
-        </Grid>
-        <Grid item xs_24={24} sm_24={6} md_24={3} lg_24={1}>
-          <Box>24</Box>
+      <Grid item xs={12}>
+        <Grid container>
+          <Grid item xs={12} md={2}>
+            <Grid container>
+              <Grid item xs={12}>
+                <Box>
+                  <div style={{ minHeight: '80vh' }}>
+                    <h2>コンテンツ</h2>
+                    <nav>nav...</nav>
+                  </div>
+                </Box>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} md={8}>
+            <Grid container>
+              <Grid item xs={12}>
+                <Box>
+                  <div style={{ minHeight: '80vh' }}>
+                    <h2>コンテンツ</h2>
+                    <main>main...</main>
+                  </div>
+                </Box>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} md={2}>
+            <Grid container>
+              <Grid item xs={12}>
+                <Box>
+                  <div style={{ minHeight: '80vh' }}>
+                    <h2>コンテンツ</h2>
+                    <aside>aside...</aside>
+                  </div>
+                </Box>
+              </Grid>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
-    </div>
+    </Grid>
   )
 }

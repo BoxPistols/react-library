@@ -2,7 +2,7 @@
 import Bg from './Box'
 
 const Storybook = {
-	title: 'UI-Catalogue/Colors',
+	title: 'Catalogue/Colors',
 	component: Bg
 }
 export default Storybook

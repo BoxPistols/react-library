@@ -1,7 +1,7 @@
 import { Button } from './Button';
 
 const Storybook = {
-  title: 'State/Button',
+  title: 'Modules/Button',
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },

@@ -1,0 +1,12 @@
+.form-area {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  &_input{
+    margin: 0 .25em 0 0;
+  }
+
+  &_button {
+    margin-bottom: 1.2em;
+  }
+}

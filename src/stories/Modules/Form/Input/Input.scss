@@ -15,6 +15,10 @@ $input-width: 120px;
 
   > label {
     margin-right: 0.5em;
+
+    &.none{
+      font-size: 0;
+    }
   }
 
   > input,

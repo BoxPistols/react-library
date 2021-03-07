@@ -3,7 +3,7 @@ import './Input.scss'
 
 export default function Input(props) {
 
-  const { label, size = 'medum', rad = 'radius', placeholder, ...args } = props
+  const { labelClass, label, size = 'medum', rad = 'radius', placeholder, ...args } = props
 
   function handleChange() {
     console.log('handleChange')
@@ -11,7 +11,7 @@ export default function Input(props) {
 
   return (
     <div className="form form-input">
-      <label>{label}</label>
+      <label className={`${labelClass}`}>{label}</label>
       <input className={[`input ${size} ${rad}`]} {...args} placeholder={placeholder} onChange={handleChange} />
     </div>
   )
@@ -20,7 +20,8 @@ export default function Input(props) {
 Input.propTypes = {
   label: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large', 'x-large']),
-  rad: PropTypes.oneOf(['defult', 'radius']),
+  rad: PropTypes.oneOf(['', 'radius']),
+  labelClass: PropTypes.oneOf(['', 'none']),
   placeholder: PropTypes.string,
 }
 
@@ -28,5 +29,6 @@ Input.defaultProps = {
   label: 'Label Name',
   size: 'small',
   placeholder: 'Please input text...',
+  labelClass: '',
   rad: 'radius'
 }

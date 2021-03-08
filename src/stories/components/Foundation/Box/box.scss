@@ -1,0 +1,108 @@
+.stb__box-1 {
+  display: inline-flex;
+}
+
+.stb__box-1>* {
+  margin: 8px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+  width: 120px;
+  height: 120px;
+}
+
+.box p {
+  margin: 0;
+}
+
+.variant-code {
+  -webkit-user-select: all;
+
+  /* Chrome all / Safari all */
+  -moz-user-select: all;
+
+  /* Firefox all */
+  -ms-user-select: all;
+
+  /* IE 10+ */
+  user-select: all;
+
+  /* Likely future */
+}
+
+/* Colors */
+.box-primary {
+  background-color: #2161aa;
+}
+
+.box-success {
+  background-color: rgb(53, 146, 84);
+}
+
+.box-danger {
+  background-color: hsl(7, 61%, 48%);
+}
+
+.box-warning {
+  background-color: hsl(46, 71%, 54%);
+}
+
+.box-info {
+  background-color: hsl(192, 53%, 46%);
+}
+
+.box-gray {
+  background-color: #ccc;
+}
+
+.box-gray-100 {
+  background-color: rgb(228, 228, 228);
+}
+
+.box-gray-200 {
+  background-color: rgb(190, 190, 190);
+}
+
+.box-gray-300 {
+  background-color: rgb(133, 133, 133);
+}
+
+.box-gray-400 {
+  background-color: rgb(105, 105, 105);
+}
+
+.box-gray-500 {
+  background-color: rgb(65, 65, 65);
+}
+
+/* Radius */
+.rad-none {
+  border-radius: 0px;
+}
+
+.rad-sm {
+  border-radius: 4px;
+}
+
+.rad-md {
+  border-radius: 8px;
+}
+
+.rad-lg {
+  border-radius: 12px;
+}
+
+.rad-half {
+  border-radius: 50%;
+}
+
+.rad-full {
+  border-radius: 4em;
+}

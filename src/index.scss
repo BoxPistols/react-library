@@ -1,0 +1,56 @@
+@import 'custom';
+@import 'css/utility';
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
+
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+// }
+
+body {
+  // margin: 0;
+  // min-height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-justify: inter-ideograph;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  zoom: 1;
+  color: #091f6c;
+  font-family: 'Noto Sans Japanese', 'Roboto', Arial;
+  font-size: 16px;
+  font-size: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* position */
+
+// .pos {
+//   &_rel {
+//     position: relative;
+//   }
+
+//   &_abs {
+//     position: absolute;
+//   }
+// }
+
+/* Heading 一括 */
+
+[class^='head_'] {
+  line-height: 1.8;
+
+  // color: $complementColor;
+  color: $secondaryColor;
+}
+
+.fx {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fx_jc-e {
+  justify-content: flex-end;
+}

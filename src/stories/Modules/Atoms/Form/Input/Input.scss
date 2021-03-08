@@ -1,0 +1,58 @@
+@import '/src/css/utility.scss';
+
+$input-font-size: 12px;
+$input-width: 120px;
+
+@mixin form_input-size($size: 1) {
+  font-size: 0.8em * $size;
+  width: 12em * $size;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1.2em ;
+
+  > label {
+    margin-right: 0.5em;
+
+    &.none{
+      font-size: 0;
+    }
+  }
+
+  > input,
+  input:focus {
+    font-size: 14px;
+    padding: 0.4em 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 0.2em;
+    background-color: #fcfcfc;
+  }
+
+  .radius {
+    border-radius: 4em;
+    outline: none;
+
+    &:focus {
+      border-radius: 4em;
+      border: 1px solid $primaryColor;
+    }
+  }
+
+  .small {
+    @include form_input-size;
+  }
+
+  .medium {
+    @include form_input-size(1.1);
+  }
+
+  .large {
+    @include form_input-size(1.2);
+  }
+
+  .x-large {
+    @include form_input-size(1.3);
+  }
+}

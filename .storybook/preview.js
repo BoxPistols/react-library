@@ -3,4 +3,4 @@ export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
 }
 
-// import './reset.scss'
+import './StoryBook.scss'

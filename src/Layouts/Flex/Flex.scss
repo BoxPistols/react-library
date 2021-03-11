@@ -1,0 +1,29 @@
+.fx {
+  &-flex {
+    display: flex;
+  }
+  &-inline {
+    display: inline-flex;
+  }
+  &-jc-center {
+    display: flex;
+    justify-content: center;
+  }
+  &-jc-center {
+    display: flex;
+    justify-content: center;
+  }
+  &-ai-center {
+    display: flex;
+    align-items: center;
+  }
+  &-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-column {
+    display: flex;
+    flex-direction: column;
+  }
+}

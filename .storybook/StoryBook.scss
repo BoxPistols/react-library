@@ -1,0 +1,14 @@
+// Storybook Styles
+
+.grid {
+  display: grid;
+
+  &-gap {
+    display: grid;
+    gap: 8px;
+  }
+}
+
+.sb_param-01{
+  background-color: #cde;
+}

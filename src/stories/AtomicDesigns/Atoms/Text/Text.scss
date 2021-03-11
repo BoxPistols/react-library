@@ -1,0 +1,69 @@
+// TODO: px-to-rem mixin
+.text-xxs {
+  font-size: 10px;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-md {
+  font-size: 18px;
+}
+
+.text-lg {
+  font-size: 20px;
+}
+
+.text-xl {
+  font-size: 24px;
+}
+
+.text-xxl {
+  font-size: 32px;
+}
+
+.text-xxxl {
+  font-size: 40px;
+}
+
+.text-xxxl {
+  font-size: 32px;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-normal {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.text-upper {
+  font-size: auto;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-noUnderline {
+  text-decoration: none;
+}
+
+.letterSpacing-loose {
+  letter-spacing: 1px;
+}
+
+.letterSpacing-looser {
+  letter-spacing: 1px;
+}
+
+.lineHeight-normal {
+  line-height: 1.5;
+}

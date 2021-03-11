@@ -3,7 +3,7 @@ import Input from '../../Atoms/Form/Input/Input'
 import './Submit.scss'
 
 const Storybook = {
-  title: 'Modules/Molecules/Form/Submit',
+  title: 'Atomic Designs/Molecules/Form/Submit',
 }
 export default Storybook
 

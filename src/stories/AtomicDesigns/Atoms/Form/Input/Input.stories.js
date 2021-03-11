@@ -2,7 +2,7 @@ import React from 'react'
 import Input from './Input'
 
 const Storybook = {
-  title: 'Modules/Atoms/Form/Input',
+  title: 'Atomic Designs/Atoms/Form/Input',
   component: Input,
 }
 export default Storybook
